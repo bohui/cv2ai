@@ -144,6 +144,12 @@ If that validator reports `ModuleNotFoundError: No module named 'yaml'`, install
 
 ## Sample Output
 
+### Dashboard Preview
+
+![CV2AI sample dashboard](examples/sample-dashboard.png)
+
+The image above is a sanitized sample rendered from [examples/sample-dashboard.html](examples/sample-dashboard.html), so users can see the dashboard shape directly in this README without opening a separate file.
+
 Sanitized sample dashboard summary:
 
 ```text
@@ -177,6 +183,7 @@ See:
 - [examples/sample-profile.md](examples/sample-profile.md)
 - [examples/sample-metrics.json](examples/sample-metrics.json)
 - [examples/sample-dashboard.html](examples/sample-dashboard.html)
+- [examples/sample-dashboard.png](examples/sample-dashboard.png)
 
 ## Privacy Notes
 
@@ -198,4 +205,3 @@ cv2ai/
 ├── scripts/install_weekly_cron.sh
 └── examples/
 ```
-
