@@ -1,0 +1,4 @@
+interface:
+  display_name: "CV2AI"
+  short_description: "Turn Codex history into a career profile"
+  default_prompt: "Use $cv2ai to summarize last week of Codex work into resume-ready accomplishments and a profile metrics page."

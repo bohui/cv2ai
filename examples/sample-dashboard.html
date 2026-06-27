@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV2AI Sample Dashboard</title>
+  <style>
+    :root { --ink:#17211b; --muted:#5b6860; --line:#d8ded8; --bg:#f6f7f2; --panel:#fff; --accent:#0f766e; --accent2:#8b5cf6; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: var(--bg); }
+    main { width: min(1040px, calc(100% - 32px)); margin: 0 auto; padding: 36px 0; }
+    h1 { margin: 0 0 8px; font-size: clamp(2rem, 6vw, 4rem); line-height: .95; }
+    h2 { margin: 0 0 14px; font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+    p { margin: 0; line-height: 1.5; }
+    .focus, section, .metric { background: var(--panel); border: 1px solid var(--line); }
+    .focus { padding: 24px; margin: 24px 0 16px; }
+    .metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-bottom: 16px; }
+    .metric { border: 0; padding: 18px; }
+    .metric span { display:block; color: var(--muted); font-size: .82rem; }
+    .metric strong { display:block; margin-top: 4px; font-size: 1.7rem; color: var(--accent); }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    section { padding: 20px; }
+    .bar-row { display: grid; gap: 6px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+    .bar-row:last-child { border-bottom: 0; }
+    .bar-label { display:flex; justify-content:space-between; gap:16px; }
+    .track { height: 10px; background: #e8ece8; border-radius: 999px; overflow:hidden; }
+    .track span { display:block; height:100%; background:linear-gradient(90deg,var(--accent),var(--accent2)); }
+    small { color: var(--muted); }
+    @media (max-width: 760px) { .metrics, .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>CV2AI Sample Dashboard</h1>
+    <p>2026-06-20 to 2026-06-27</p>
+    <div class="focus">
+      <h2>Last Week Focus</h2>
+      <p>Most visible work centered on product-app, with TypeScript as the strongest language signal, and Frontend UX as the leading technique across roughly 18.4 active Codex hours.</p>
+    </div>
+    <div class="metrics">
+      <div class="metric"><span>Sessions</span><strong>14</strong></div>
+      <div class="metric"><span>Repos</span><strong>3</strong></div>
+      <div class="metric"><span>Rough Active Hours</span><strong>18.4</strong></div>
+      <div class="metric"><span>Credits Consumed</span><strong>n/a</strong></div>
+    </div>
+    <div class="grid">
+      <section>
+        <h2>Repo Time Split</h2>
+        <div class="bar-row"><div class="bar-label"><span>product-app</span><strong>52.4%</strong></div><div class="track"><span style="width:52.4%"></span></div><small>578.5 rough active minutes</small></div>
+        <div class="bar-row"><div class="bar-label"><span>data-pipeline</span><strong>28.1%</strong></div><div class="track"><span style="width:28.1%"></span></div><small>310.2 rough active minutes</small></div>
+        <div class="bar-row"><div class="bar-label"><span>admin-portal</span><strong>19.5%</strong></div><div class="track"><span style="width:19.5%"></span></div><small>215.1 rough active minutes</small></div>
+      </section>
+      <section>
+        <h2>Language Time Split</h2>
+        <div class="bar-row"><div class="bar-label"><span>TypeScript</span><strong>63.8%</strong></div><div class="track"><span style="width:63.8%"></span></div><small>701.9 rough active minutes</small></div>
+        <div class="bar-row"><div class="bar-label"><span>Python</span><strong>29.4%</strong></div><div class="track"><span style="width:29.4%"></span></div><small>323.2 rough active minutes</small></div>
+        <div class="bar-row"><div class="bar-label"><span>SQL</span><strong>6.8%</strong></div><div class="track"><span style="width:6.8%"></span></div><small>74.7 rough active minutes</small></div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

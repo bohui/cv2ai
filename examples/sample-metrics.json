@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "active_hours": 18.4,
+    "active_minutes": 1103.8,
+    "top_repo": "product-app",
+    "top_language": "TypeScript",
+    "top_technique": "Frontend UX",
+    "focus_sentence": "Most visible work centered on product-app, with TypeScript as the strongest language signal, and Frontend UX as the leading technique across roughly 18.4 active Codex hours. New signals: Playwright, API Design. Continued signals: React, Next.js, Python.",
+    "new_techniques": ["Playwright", "API Design"],
+    "continued_techniques": ["React", "Next.js", "Python"],
+    "baseline_technique_count": 12
+  },
+  "repo_time": [
+    {"name": "product-app", "value": 578.5, "percent": 52.4},
+    {"name": "data-pipeline", "value": 310.2, "percent": 28.1},
+    {"name": "admin-portal", "value": 215.1, "percent": 19.5}
+  ],
+  "language_time": [
+    {"name": "TypeScript", "value": 701.9, "percent": 63.8},
+    {"name": "Python", "value": 323.2, "percent": 29.4},
+    {"name": "SQL", "value": 74.7, "percent": 6.8}
+  ],
+  "technique_time": [
+    {"name": "Frontend UX", "value": 189.7, "percent": 17.2},
+    {"name": "API Design", "value": 170.9, "percent": 15.5},
+    {"name": "Playwright", "value": 127.4, "percent": 11.6},
+    {"name": "Data Analysis", "value": 118.2, "percent": 10.8}
+  ],
+  "usage": {
+    "credits_available": false,
+    "credits_display": "n/a",
+    "credits_note": "Codex history did not expose numeric credits for this window; token totals are shown as the consumption proxy.",
+    "total_tokens": 12840000,
+    "input_tokens": 12600000,
+    "cached_input_tokens": 10500000,
+    "output_tokens": 180000,
+    "reasoning_output_tokens": 60000,
+    "token_count_events": 84
+  }
+}
+
