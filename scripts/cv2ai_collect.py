@@ -929,10 +929,16 @@ def main() -> int:
 
     write_json(out_dir / "evidence.json", evidence)
     write_json(out_dir / "metrics.json", metrics)
-    (out_dir / "profile.md").write_text(markdown_report(out_dir, since, until, metrics, sessions), encoding="utf-8")
-    (out_dir / "webpage.html").write_text(html_report(since, until, metrics), encoding="utf-8")
+    profile_path = out_dir / "profile.md"
+    dashboard_path = out_dir / "webpage.html"
+    profile_path.write_text(markdown_report(out_dir, since, until, metrics, sessions), encoding="utf-8")
+    dashboard_path.write_text(html_report(since, until, metrics), encoding="utf-8")
 
     print(f"CV2AI report written to: {out_dir}")
+    print(f"Dashboard: {dashboard_path}")
+    print(f"Profile: {profile_path}")
+    print(f"Dashboard link: [webpage.html]({dashboard_path})")
+    print(f"Focus summary: {metrics['summary']['focus_sentence']}")
     print(f"Sessions: {metrics['session_count']} | Repos: {metrics['repo_count']} | Packages: {len(metrics['packages'])}")
     return 0
 

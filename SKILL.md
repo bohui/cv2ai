@@ -48,7 +48,7 @@ Use `--since YYYY-MM-DD --until YYYY-MM-DD` for a specific window, or `--span al
 For scheduled runs, use a prompt like:
 
 ```text
-Use $cv2ai to analyze the previous 7 days of local Codex chat history. Run the collector with --span last-week so it writes to ~/.cv2ai-reports, verify that profile.md and webpage.html were generated, and report the output folder path. Do not rewrite the generated dashboard unless the user explicitly asks for a prose polish pass.
+Use $cv2ai to analyze the previous 7 days of local Codex chat history. Run the collector with --span last-week so it writes to ~/.cv2ai-reports, verify that profile.md and webpage.html were generated, and always include the printed dashboard Markdown link (`[webpage.html](/absolute/path/webpage.html)`) in the final scheduler summary. Do not rewrite the generated dashboard unless the user explicitly asks for a prose polish pass.
 ```
 
 ## Script

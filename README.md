@@ -52,7 +52,7 @@ For an AI agent installing from this README:
 1. Clone this repo into `${CODEX_HOME:-$HOME/.codex}/skills/cv2ai`.
 2. Ensure `scripts/cv2ai_weekly.sh` and `scripts/install_weekly_cron.sh` are executable.
 3. Run the validation command below.
-4. Run `scripts/cv2ai_weekly.sh` once and report the output folder path.
+4. Run `scripts/cv2ai_weekly.sh` once and report the output folder path plus the printed dashboard Markdown link.
 
 ## Run
 
@@ -60,6 +60,13 @@ Weekly/default window:
 
 ```bash
 "${CODEX_HOME:-$HOME/.codex}/skills/cv2ai/scripts/cv2ai_weekly.sh"
+```
+
+The command prints a clickable dashboard target for scheduler/agent summaries:
+
+```text
+Dashboard link: [webpage.html](/absolute/path/to/.cv2ai-reports/.../webpage.html)
+Focus summary: Most visible work centered on ...
 ```
 
 Specific date range:
@@ -124,6 +131,12 @@ Use $cv2ai to analyze last week, then polish profile.md into resume-ready bullet
 ```
 
 Routine weekly use does not need an LLM rewrite. The collector deterministically generates `profile.md` and `webpage.html`.
+
+Scheduler summaries should always include the generated dashboard link, for example:
+
+```markdown
+Dashboard: [webpage.html](/Users/example/.cv2ai-reports/cv2ai-2026-06-20_to_2026-06-27-20260627-090000/webpage.html)
+```
 
 ## Validate
 
